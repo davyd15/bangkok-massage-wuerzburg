@@ -10,13 +10,13 @@ fi
 source .env
 
 echo "CSS minifizieren..."
-npx --yes clean-css-cli neu/css/style.css -o neu/css/style.min.css
+npx --yes clean-css-cli css/style.css -o css/style.min.css
 
 echo "Upload nach $SFTP_HOST..."
 
 lftp -c "
 open sftp://$SFTP_USER:$SFTP_PASS@$SFTP_HOST:$SFTP_PORT
-mirror -R --verbose ./neu/ $SFTP_REMOTE_PATH
+mirror -R --verbose . $SFTP_REMOTE_PATH --exclude-glob .env --exclude-glob .env.example --exclude-glob .git --exclude-glob .gitignore --exclude-glob .DS_Store --exclude-glob README.md --exclude-glob LICENSE --exclude-glob deploy.sh --exclude-glob alt-wordpress/
 bye
 "
 

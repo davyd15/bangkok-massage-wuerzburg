@@ -12,7 +12,7 @@
 
 <br>
 
-![Bangkok Thaimassage Würzburg Preview](./img/og-image.webp)
+![Bangkok Thaimassage Würzburg Preview](./img/hero-bg.webp)
 
 </div>
 
