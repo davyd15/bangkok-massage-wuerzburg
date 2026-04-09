@@ -24,7 +24,7 @@ Multi-page website for Bangkok Thaimassage, a Thai massage studio in Würzburg, 
 
 **Industry:** Thai massage, wellness  
 **Languages:** DE  
-**Pages:** 6 (index, behandlungen, preise, kontakt, datenschutz, impressum)  
+**Pages:** 7 (index, behandlungen, preise, kontakt, datenschutz, impressum, cookie-policy)  
 **Contact:** Phone, WhatsApp, contact form  
 
 ---
@@ -50,10 +50,10 @@ Handled via a separate PHP backend with minimal required fields (name, email, me
 
 **GDPR compliance**
 - All fonts (WOFF2) hosted locally — no Google Fonts, no external CDNs
-- OpenStreetMap embedded instead of Google Maps — no third-party data transfer
+- Google Maps with 2-click consent solution — map loads only after explicit user action, no data sent without consent
 - WhatsApp link with pre-filled message — no plugin, no tracking
-- Contact form: only name, email, message — data minimization per Art. 5 GDPR
-- Impressum and Datenschutzerklärung on every page in the footer (§5 TMG, Art. 13 DSGVO)
+- Contact form: only name, email, message — data minimization per Art. 5 DSGVO
+- Impressum and Datenschutzerklärung on every page in the footer (§5 DDG, Art. 13 DSGVO)
 
 **Performance**
 - All images as WebP with `loading="lazy"`
