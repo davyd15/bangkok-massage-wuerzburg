@@ -16,7 +16,7 @@ echo "Upload nach $SFTP_HOST..."
 
 lftp -c "
 open sftp://$SFTP_USER:$SFTP_PASS@$SFTP_HOST:$SFTP_PORT
-mirror -R --verbose . $SFTP_REMOTE_PATH --exclude-glob .env --exclude-glob .env.example --exclude-glob .git --exclude-glob .gitignore --exclude-glob .DS_Store --exclude-glob README.md --exclude-glob LICENSE --exclude-glob deploy.sh --exclude-glob alt-wordpress/
+mirror -R --verbose . $SFTP_REMOTE_PATH --exclude-glob .env --exclude-glob .env.example --exclude '.git' --exclude-glob .gitignore --exclude-glob .DS_Store --exclude-glob README.md --exclude-glob LICENSE --exclude-glob deploy.sh --exclude-glob alt-wordpress/ --exclude-glob '*.md' --exclude-glob pinegrow.json
 bye
 "
 
