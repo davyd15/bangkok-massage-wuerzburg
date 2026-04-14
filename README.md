@@ -36,6 +36,7 @@ Multi-page website for Bangkok Thaimassage, a Thai massage studio in Würzburg, 
 | Markup | HTML5 | Semantic elements, ARIA labels |
 | Styling | CSS3 | Custom, mobile-first |
 | Scripting | Vanilla JS | No libraries |
+| CDN / Security | Cloudflare | DDoS protection, HTTPS, caching |
 | Hosting | Hetzner Shared | Apache, `.htaccess` CSP + HSTS |
 
 ---
